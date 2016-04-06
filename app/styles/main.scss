@@ -1,5 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600,400);
 @import 'variables';
 
+
 body {
-  background: $light-grey;
+  background: $white;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $mainColor;
+  font-size: 1.5em;
 }
+
+img {
+	max-width: 100%;
+}
+
+h3 {
+	font-weight: 300;
+	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	li {
+		display: inline-block;
+	}
+}
+
+li {display: inline}
+
+.blue {
+	color: $mainColor;
+}
+
+.pink {
+	color: $pink;
+}
+
+.orange {
+	color: $orange;
+}
+
+.flex-container {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.flex-item {
+	position: relative;
+	width: 72%;
+	padding: 2em 1%;
+}
+
+
+.outer-box {
+	position: relative;
+	width: 100%;
+	border: 3px solid $mainColor;
+}
+
+.arrow {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	border-bottom: 3px solid $mainColor;
+	border-left: 3px solid $mainColor;
+	padding: 0.25em 0.33em;
+}
+
+.inner-box {
+	position: relative;
+	margin: 1.5em;
+	text-align: center;
+}
+
+ul.hover-boxes {
+	border-top: 3px solid $mainColor;
+	padding: 0;
+	text-align: center;
+	line-height: 2em;
+}
+
+.hover-boxes li {
+	width: 18%;
+	border-right: 3px solid $mainColor;
+}
+
+.hover-boxes li:last-child {
+	border: none;
+}
+
+.info-box h3 {
+	float: left;
+	margin-top: 0.5em;
+}
+
+.info-box span {
+	float: right;
+	margin-top: 0.5em;
+	font-weight: 600;
+	font-size: 1.25em;
+}
+
+@media all and (min-width: 675px) {
+	.flex-item {
+		width: 48%;
+	}
+}
+
+@media all and (min-width: 900px) {
+	.flex-item {
+		width: 30%;
+	}
+
+	.hover-boxes li {
+	width: 17%;
+	border-right: 3px solid $mainColor;
+}
+}
+
+
+
